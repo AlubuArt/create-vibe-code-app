@@ -1,0 +1,39 @@
+{
+    "name": "__PROJECT_NAME__",
+    "version": "0.1.0",
+    "private": true,
+    "description": "A Next.js project created with create-vibe-app, optimized for AI-driven development",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "lint:fix": "next lint --fix",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "type-check": "tsc --noEmit"
+    },
+    "dependencies": {
+        "next": "^14.0.4",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.6",
+        "@types/react": "^18.2.46",
+        "@types/react-dom": "^18.2.18",
+        "@typescript-eslint/eslint-plugin": "^6.19.1",
+        "@typescript-eslint/parser": "^6.19.1",
+        "autoprefixer": "^10.4.16",
+        "eslint": "^8.56.0",
+        "eslint-config-next": "^14.0.4",
+        "eslint-config-prettier": "^9.1.0",
+        "postcss": "^8.4.32",
+        "prettier": "^3.2.4",
+        "tailwindcss": "^3.4.0",
+        "typescript": "^5.3.3"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}

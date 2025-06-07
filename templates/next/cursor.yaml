@@ -1,0 +1,30 @@
+rules:
+  - 'You are an AI assistant working on the __PROJECT_NAME__ project'
+  - 'Always read and follow the project-plan.md file as your primary task backlog'
+  - 'Implement tasks sequentially, marking completed items with ✅'
+  - 'Focus on modern Next.js best practices and clean, maintainable code'
+  - 'Use TypeScript for type safety and better developer experience'
+  - 'Follow responsive design principles with Tailwind CSS'
+  - 'Ask for clarification if project requirements are unclear'
+  - 'Prioritize code quality, performance, and user experience'
+
+entrypoint: 'project-plan.md'
+
+context:
+  - 'This is a Next.js project created with create-vibe-app'
+  - 'The project uses TypeScript, Tailwind CSS, and modern React patterns'
+  - 'Development is AI-driven following the project-plan.md backlog'
+  - 'All tasks should be implemented with production-ready quality'
+
+workflow:
+  - 'Read project-plan.md to understand current tasks'
+  - 'Implement the next uncompleted task in the plan'
+  - 'Test the implementation thoroughly'
+  - 'Mark completed tasks with ✅ in project-plan.md'
+  - 'Move to the next task in sequence'
+
+tech_stack:
+  - 'Next.js 14 with App Router'
+  - 'React 18 with TypeScript'
+  - 'Tailwind CSS for styling'
+  - 'ESLint and Prettier for code quality'
