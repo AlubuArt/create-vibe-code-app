@@ -1,8 +1,8 @@
-# create-vibe-app
+# create-vibe-code-app
 
 🚀 **A CLI tool to quickly create Next.js projects optimized for AI-driven development**
 
-`create-vibe-app` creates modern Next.js projects with TypeScript, Tailwind CSS, and AI-assistant configuration out of the box. Each project comes with a `project-plan.md` file and `cursor.yaml` configuration to seamlessly integrate with AI coding assistants like Cursor.
+`create-vibe-code-app` creates modern Next.js projects with TypeScript, Tailwind CSS, and AI-assistant configuration out of the box. Each project comes with a `project-plan.md` file and `cursor.yaml` configuration to seamlessly integrate with AI coding assistants like Cursor.
 
 ## Features
 
@@ -18,13 +18,13 @@
 
 ```bash
 # Create a new project
-npx create-vibe-app my-awesome-app
+npx create-vibe-code-app my-awesome-project
 
 # Create project with custom plan from URL
-npx create-vibe-app my-app https://raw.githubusercontent.com/user/repo/main/plan.md
+npx create-vibe-code-app my-project https://example.com/my-project-plan.md
 
 # Navigate to your project
-cd my-awesome-app
+cd my-awesome-project
 
 # Start development
 npm run dev
@@ -32,48 +32,48 @@ npm run dev
 
 ## Installation
 
-### Global Installation
+### Global Installation (Recommended)
 ```bash
-npm install -g create-vibe-app
-create-vibe-app my-project
+npm install -g create-vibe-code-app
+create-vibe-code-app my-project
 ```
 
-### One-time Usage (Recommended)
+### One-time Usage with npx
 ```bash
-npx create-vibe-app my-project
+npx create-vibe-code-app my-project
 ```
 
 ## Usage
 
 ### Basic Usage
 ```bash
-create-vibe-app <project-name> [plan-source]
+create-vibe-code-app <project-name>
 ```
 
-**Arguments:**
-- `<project-name>` - Name of the project to create (required)
-- `[plan-source]` - Optional URL to fetch project-plan.md from
+This creates a new directory with your project name and sets up a complete Next.js application.
 
-**Examples:**
+### Custom Project Plan
+
 ```bash
-# Basic project creation
-create-vibe-app my-blog
-
-# With custom project plan
-create-vibe-app my-ecommerce https://example.com/ecommerce-plan.md
-
-# With GitHub raw URL
-create-vibe-app my-app https://raw.githubusercontent.com/user/repo/main/project-plan.md
+create-vibe-code-app <project-name> <plan-url>
 ```
 
-### Project Name Requirements
-- Only letters, numbers, hyphens, and underscores
-- No spaces or special characters
-- Examples: `my-app`, `blog_2024`, `ecommerce-site`
+Fetch a custom project plan from a URL:
 
-## What Gets Created
+```bash
+create-vibe-code-app my-saas https://raw.githubusercontent.com/example/plans/main/saas-plan.md
+```
 
-When you run `create-vibe-app`, you get a fully configured Next.js project:
+The tool will:
+1. Create the project directory
+2. Copy the Next.js template
+3. Fetch your custom project plan from the URL
+4. Replace all placeholders with your project name
+5. Install dependencies automatically
+
+## Project Structure
+
+Your generated project will include:
 
 ```
 my-project/
@@ -126,10 +126,10 @@ Fetch project plans from any public URL:
 
 ```bash
 # GitHub raw file
-create-vibe-app my-app https://raw.githubusercontent.com/user/templates/main/blog-plan.md
+create-vibe-code-app my-ecommerce https://example.com/ecommerce-plan.md
 
 # Any public markdown file
-create-vibe-app my-app https://example.com/project-templates/ecommerce.md
+create-vibe-code-app my-saas https://raw.githubusercontent.com/example/plans/main/saas.md
 ```
 
 **Requirements:**
@@ -155,21 +155,21 @@ In any created project, you can run:
 
 ### Example 1: Simple Blog
 ```bash
-npx create-vibe-app my-blog
+npx create-vibe-code-app my-blog
 cd my-blog
 npm run dev
 ```
 
 ### Example 2: E-commerce with Custom Plan
 ```bash
-npx create-vibe-app online-store https://example.com/ecommerce-plan.md
+npx create-vibe-code-app online-store https://example.com/ecommerce-plan.md
 cd online-store
 # AI assistant will follow the custom plan
 ```
 
 ### Example 3: Dashboard Project
 ```bash
-npx create-vibe-app admin-dashboard
+npx create-vibe-code-app admin-dashboard
 cd admin-dashboard
 # Edit project-plan.md to add dashboard-specific tasks
 npm run dev
@@ -199,13 +199,13 @@ Each project includes:
 ```bash
 # Choose a different name or remove existing directory
 rm -rf my-project
-create-vibe-app my-project
+create-vibe-code-app my-project
 ```
 
 **"Invalid project name"**
 ```bash
 # Use only letters, numbers, hyphens, and underscores
-create-vibe-app my-valid-project-name
+create-vibe-code-app my-valid-project-name
 ```
 
 **"npm install failed"**
@@ -222,7 +222,7 @@ npm --version
 
 ### Getting Help
 
-- Check [GitHub Issues](https://github.com/yourusername/create-vibe-app/issues)
+- Check [GitHub Issues](https://github.com/yourusername/create-vibe-code-app/issues)
 - Review generated project's README.md
 - Ensure Node.js and npm are up to date
 
@@ -236,16 +236,16 @@ npm --version
 
 ## Development
 
-To work on `create-vibe-app` itself:
+To work on `create-vibe-code-app` itself:
 
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/create-vibe-app.git
-cd create-vibe-app
+git clone https://github.com/yourusername/create-vibe-code-app.git
+cd create-vibe-code-app
 npm install
 
 # Test CLI locally
-node bin/create-vibe-app.js test-project
+node bin/create-vibe-code-app.js test-project
 
 # Run tests
 npm test

@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `create-vibe-app` will be documented in this file.
+All notable changes to `create-vibe-code-app` will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -9,11 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🎉 Initial Release
 
-This is the first release of `create-vibe-app` - a CLI tool for creating Next.js projects optimized for AI-driven development.
+This is the first release of `create-vibe-code-app` - a CLI tool for creating Next.js projects optimized for AI-driven development.
 
 ### ✨ Added
 - **CLI Tool**: Complete command-line interface using `commander`
-  - Project creation with `npx create-vibe-app <project-name>`
+  - Project creation with `npx create-vibe-code-app <project-name>`
   - Optional URL parameter for custom project plans
   - Argument validation and error handling
   - Colored output with progress indicators
@@ -64,7 +64,7 @@ This is the first release of `create-vibe-app` - a CLI tool for creating Next.js
 
 ### 📁 Project Structure
 ```
-create-vibe-app/
+create-vibe-code-app/
 ├── bin/create-vibe-app.js     # Main CLI script
 ├── templates/next/            # Next.js project template
 ├── __tests__/                 # Test suite

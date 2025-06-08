@@ -1,10 +1,10 @@
 {
-    "name": "create-vibe-app",
+    "name": "create-vibe-code-app",
     "version": "0.1.0",
     "description": "A CLI tool to quickly create Next.js projects optimized for AI-driven development",
     "main": "bin/create-vibe-app.js",
     "bin": {
-        "create-vibe-app": "./bin/create-vibe-app.js"
+        "create-vibe-code-app": "./bin/create-vibe-app.js"
     },
     "scripts": {
         "test": "jest",
@@ -22,11 +22,11 @@
         "template",
         "boilerplate"
     ],
-    "author": "Your Name",
+    "author": "create-vibe-app contributors",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/yourusername/create-vibe-app.git"
+        "url": "https://github.com/create-vibe-app/create-vibe-app.git"
     },
     "engines": {
         "node": ">=16.0.0"
