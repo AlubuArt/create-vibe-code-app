@@ -5,6 +5,27 @@ All notable changes to `create-vibe-code-app` will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2025-06-08
+
+### 🔧 Updated - Cursor Rules Migration
+
+**Breaking Change:** Migrated from legacy `cursor.yaml` to modern `.cursor/rules/` system.
+
+### ✨ Changed
+- **Cursor Configuration**: Migrated from `cursor.yaml` to `.cursor/rules/project-guide.mdc`
+- **MDC Format**: Now uses modern MDC (Markdown with metadata) format
+- **Documentation**: Updated all references to use new `.cursor/rules/` structure
+- **Tests**: Updated test suite to validate new structure
+- **Compatibility**: Follows latest [Cursor documentation standards](https://docs.cursor.com/context/rules)
+
+### 🛠️ Technical Details
+- Replaced `cursor.yaml` with `.cursor/rules/project-guide.mdc`
+- Updated CLI script to reference new file structure
+- Modified all documentation and examples
+- Updated E2E and unit tests
+
+This update ensures compatibility with the latest Cursor AI editor and follows current best practices for AI assistant configuration.
+
 ## [0.1.0] - 2025-06-08
 
 ### 🎉 Initial Release - Now Available on npm!
