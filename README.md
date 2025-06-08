@@ -224,7 +224,7 @@ npm --version
 
 ### Getting Help
 
-- Check [GitHub Issues](https://github.com/yourusername/create-vibe-code-app/issues)
+- Check [GitHub Issues](https://github.com/AlubuArt/create-vibe-code-app/issues)
 - Review generated project's README.md
 - Ensure Node.js and npm are up to date
 
@@ -242,7 +242,7 @@ To work on `create-vibe-code-app` itself:
 
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/create-vibe-code-app.git
+git clone https://github.com/AlubuArt/create-vibe-code-app.git
 cd create-vibe-code-app
 npm install
 
