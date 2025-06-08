@@ -5,11 +5,18 @@ All notable changes to `create-vibe-code-app` will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.0] - 2024-01-XX
+## [0.1.0] - 2025-06-08
 
-### 🎉 Initial Release
+### 🎉 Initial Release - Now Available on npm!
 
 This is the first release of `create-vibe-code-app` - a CLI tool for creating Next.js projects optimized for AI-driven development.
+
+**🚀 Now available globally:**
+```bash
+npx create-vibe-code-app my-project
+```
+
+**📦 npm package:** https://www.npmjs.com/package/create-vibe-code-app
 
 ### ✨ Added
 - **CLI Tool**: Complete command-line interface using `commander`
