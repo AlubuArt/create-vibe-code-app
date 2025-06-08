@@ -59,7 +59,7 @@ async function createVibeApp(projectName, planSource) {
     console.log(chalk.cyan('   npm run dev'));
     console.log(chalk.cyan('\n🤖 AI-ready features:'));
     console.log(chalk.cyan('   • Check project-plan.md for your development backlog'));
-    console.log(chalk.cyan('   • cursor.yaml is configured for AI assistants'));
+    console.log(chalk.cyan('   • .cursor/rules/ is configured for AI assistants'));
     console.log(chalk.cyan('   • Start coding with your AI assistant!'));
     
   } catch (error) {
@@ -94,8 +94,8 @@ async function copyTemplate(targetDir) {
 async function replacePlaceholders(targetDir, projectName) {
   const filesToReplace = [
     'package.json',
-    'project-plan.md', 
-    'cursor.yaml',
+    'project-plan.md',
+    '.cursor/rules/project-guide.mdc',
     'README.md',
     'src/components/Header.tsx',
     'src/pages/index.tsx'

@@ -1,92 +1,83 @@
-# Example 1: Basic Usage
+# Basic Usage Example
 
-This example shows the simplest way to use `create-vibe-app` to create a new project.
+This example shows how to create a simple Next.js project using `create-vibe-code-app`.
 
-## Scenario
+## Command
 
-You want to create a basic Next.js project with TypeScript and Tailwind CSS, optimized for AI development.
-
-## Steps
-
-1. **Create the project:**
-   ```bash
-   npx create-vibe-app my-first-app
-   ```
-
-2. **Navigate to the project:**
-   ```bash
-   cd my-first-app
-   ```
-
-3. **Start development server:**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in browser:**
-   Open [http://localhost:3000](http://localhost:3000)
-
-## What you get
-
-- ✅ Modern Next.js 14 with TypeScript
-- ✅ Tailwind CSS pre-configured
-- ✅ ESLint and Prettier setup
-- ✅ AI-ready with `cursor.yaml` and `project-plan.md`
-- ✅ Beautiful responsive landing page
-- ✅ All dependencies installed
-
-## Project structure
-
+```bash
+npx create-vibe-code-app my-blog
 ```
-my-first-app/
+
+## What Gets Created
+
+This creates a new directory `my-blog/` with a complete Next.js setup:
+
+### Project Structure
+```
+my-blog/
 ├── src/
-│   ├── components/Header.tsx
+│   ├── components/
+│   │   └── Header.tsx      # Example component
 │   ├── pages/
-│   │   ├── _app.tsx
-│   │   └── index.tsx
-│   └── styles/globals.css
-├── project-plan.md    # Your AI development roadmap
-├── cursor.yaml        # AI assistant configuration
+│   │   ├── _app.tsx        # App configuration
+│   │   └── index.tsx       # Home page
+│   └── styles/
+│       └── globals.css     # Global styles
+├── public/
+│   └── favicon.ico
+├── .cursor/
+│   └── rules/
+│       └── project-guide.mdc  # AI assistant configuration  
+├── project-plan.md         # Development backlog
 ├── package.json
-└── ... (config files)
+├── tsconfig.json
+├── tailwind.config.js
+├── next.config.js
+├── .eslintrc.json
+├── .prettierrc
+└── README.md
 ```
 
-## Next steps
+### Key Features
+- ✅ Modern Next.js 14 with TypeScript
+- ✅ Tailwind CSS for styling  
+- ✅ ESLint and Prettier configured
+- ✅ AI-ready with `.cursor/rules/` and `project-plan.md`
 
-1. **Review the project plan:**
-   ```bash
-   cat project-plan.md
-   ```
+## Getting Started
 
-2. **Start AI-driven development:**
-   - Open project in Cursor or AI-enabled editor
-   - Ask AI to read `project-plan.md`
-   - Request implementation of features from the plan
+```bash
+# Navigate to your project
+cd my-blog
 
-3. **Customize the project:**
-   - Edit `project-plan.md` to add your specific requirements
-   - Modify components in `src/components/`
-   - Update styling in `src/styles/`
+# Start development server
+npm run dev
 
-## Expected output
-
-```
-🚀 Creating my-first-app with create-vibe-app...
-📂 Copying template files...
-🔄 Replacing placeholders...
-📦 Installing dependencies...
-   Running npm install...
-
-✅ Project created successfully!
-
-🎯 Next steps:
-   cd my-first-app
-   npm run dev
-
-🤖 AI-ready features:
-   • Check project-plan.md for your development backlog
-   • cursor.yaml is configured for AI assistants
-   • Start coding with your AI assistant!
+# Open http://localhost:3000 in your browser
 ```
 
-This is the foundation for any project - from here you can build blogs, e-commerce sites, dashboards, or any other web application! 
+### Project Structure Details
+
+- **src/pages/index.tsx** - Landing page with modern design
+- **src/components/Header.tsx** - Reusable header component
+- **.cursor/rules/project-guide.mdc** - AI assistant configuration using MDC format
+- **project-plan.md** - Structured development tasks
+
+### AI Development
+
+The project is ready for AI-assisted development:
+
+• .cursor/rules/project-guide.mdc is configured for AI assistants
+• project-plan.md contains your development roadmap
+• Ask your AI assistant to read the project plan and start coding!
+
+## Next Steps
+
+1. Open the project in Cursor or your preferred AI-enabled editor
+2. Review `project-plan.md` for development tasks
+3. Ask your AI assistant to implement features step by step
+4. Customize the design and add your own content
+
+---
+
+**Happy coding! 🚀** 

@@ -96,14 +96,16 @@ describe('End-to-end CLI tests', () => {
     await getAllFiles(templateDir);
     
     // Essential files that should exist
-    const essentialFiles = [
+    const requiredFiles = [
       'package.json',
-      'project-plan.md', 
-      'cursor.yaml',
-      'README.md'
+      'project-plan.md',
+      '.cursor/rules/project-guide.mdc',
+      'README.md',
+      'src/pages/index.tsx',
+      'src/components/Header.tsx'
     ];
     
-    essentialFiles.forEach(file => {
+    requiredFiles.forEach(file => {
       expect(flatFiles).toContain(file);
     });
   });

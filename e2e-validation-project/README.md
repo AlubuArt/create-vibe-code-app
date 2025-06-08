@@ -1,4 +1,4 @@
-# __PROJECT_NAME__
+# e2e-validation-project
 
 Welcome to your new Next.js project created with **create-vibe-code-app**! 🚀
 
@@ -52,7 +52,7 @@ This project is configured for seamless AI-assisted development:
 ## Project Structure
 
 ```
-__PROJECT_NAME__/
+e2e-validation-project/
 ├── src/
 │   ├── components/          # React components
 │   ├── pages/              # Next.js pages

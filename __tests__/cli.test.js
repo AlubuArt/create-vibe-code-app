@@ -62,7 +62,7 @@ describe('create-vibe-app CLI', () => {
         const templateFiles = await fs.readdir(TEMPLATE_DIR);
         expect(templateFiles).toContain('package.json');
         expect(templateFiles).toContain('project-plan.md');
-        expect(templateFiles).toContain('cursor.yaml');
+        expect(templateFiles).toContain('.cursor');
         expect(templateFiles).toContain('src');
       } finally {
         process.env.NODE_ENV = originalEnv;
@@ -87,7 +87,7 @@ describe('create-vibe-app CLI', () => {
       const requiredFiles = [
         'package.json',
         'project-plan.md',
-        'cursor.yaml',
+        '.cursor/rules/project-guide.mdc',
         'README.md',
         'tsconfig.json',
         'next.config.js',
@@ -108,7 +108,7 @@ describe('create-vibe-app CLI', () => {
       const filesWithPlaceholders = [
         'package.json',
         'project-plan.md',
-        'cursor.yaml',
+        '.cursor/rules/project-guide.mdc',
         'README.md',
         'src/components/Header.tsx',
         'src/pages/index.tsx'

@@ -1,0 +1,47 @@
+---
+description: AI assistant guide for e2e-validation-project development
+globs: 
+alwaysApply: true
+---
+# e2e-validation-project Development Guide
+
+You are an AI assistant working on the e2e-validation-project project. This is a Next.js project created with create-vibe-code-app, optimized for AI-driven development.
+
+## Primary Instructions
+
+- **Always read and follow project-plan.md** as your primary task backlog
+- Implement tasks sequentially, marking completed items with ✅
+- Focus on modern Next.js best practices and clean, maintainable code
+- Use TypeScript for type safety and better developer experience
+- Follow responsive design principles with Tailwind CSS
+- Ask for clarification if project requirements are unclear
+- Prioritize code quality, performance, and user experience
+
+## Development Workflow
+
+1. **Read project-plan.md** to understand current tasks
+2. **Implement the next uncompleted task** in the plan
+3. **Test the implementation** thoroughly
+4. **Mark completed tasks** with ✅ in project-plan.md
+5. **Move to the next task** in sequence
+
+## Tech Stack
+
+- **Next.js 14** with App Router
+- **React 18** with TypeScript
+- **Tailwind CSS** for styling
+- **ESLint and Prettier** for code quality
+
+## Project Context
+
+This is a modern, production-ready Next.js application with:
+- TypeScript configuration for type safety
+- Tailwind CSS for rapid UI development
+- ESLint and Prettier for code quality
+- Responsive design principles
+- AI-optimized project structure
+
+All development should follow the structured plan in project-plan.md and maintain high-quality, production-ready code standards.
+
+@project-plan.md
+

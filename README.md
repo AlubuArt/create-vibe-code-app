@@ -2,7 +2,7 @@
 
 🚀 **A CLI tool to quickly create Next.js projects optimized for AI-driven development**
 
-`create-vibe-code-app` creates modern Next.js projects with TypeScript, Tailwind CSS, and AI-assistant configuration out of the box. Each project comes with a `project-plan.md` file and `cursor.yaml` configuration to seamlessly integrate with AI coding assistants like Cursor.
+`create-vibe-code-app` creates modern Next.js projects with TypeScript, Tailwind CSS, and AI-assistant configuration out of the box. Each project comes with a `project-plan.md` file and `.cursor/rules/` configuration to seamlessly integrate with AI coding assistants like Cursor.
 
 ## Features
 
@@ -87,8 +87,10 @@ my-project/
 │       └── globals.css         # Global styles with Tailwind
 ├── public/
 │   └── favicon.ico             # Default favicon
+├── .cursor/
+│   └── rules/
+│       └── project-guide.mdc   # AI assistant configuration
 ├── project-plan.md             # AI-readable project plan
-├── cursor.yaml                 # AI assistant configuration
 ├── package.json                # Dependencies and scripts
 ├── tsconfig.json              # TypeScript configuration
 ├── tailwind.config.js         # Tailwind CSS configuration
@@ -108,11 +110,11 @@ Each project is optimized for AI-assisted development:
 - Progress tracking with checkboxes
 - AI-friendly format and language
 
-### Cursor Configuration (`cursor.yaml`)
-- Pre-configured AI assistant rules
-- Project-specific context and workflow
-- Automatic task execution guidance
-- Best practices enforcement
+### Cursor Configuration (`.cursor/rules/`)
+- Pre-configured AI assistant rules using the new MDC format
+- Project-specific context and workflow guidance
+- Automatic task execution based on project-plan.md
+- Always-applied development guidelines
 
 ### Getting Started with AI
 1. Open your project in Cursor or similar AI-enabled editor
@@ -184,7 +186,7 @@ Each project includes:
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
 - **[ESLint](https://eslint.org/)** - Code linting and quality
 - **[Prettier](https://prettier.io/)** - Code formatting
-- **AI Configuration** - Cursor.yaml for AI assistants
+- **AI Configuration** - .cursor/rules/ for AI assistants
 
 ## Requirements
 

@@ -33,7 +33,7 @@ npx create-vibe-code-app my-project
   - Beautiful landing page with features showcase
 
 - **AI-Driven Development**: 
-  - `cursor.yaml` configuration for AI assistants
+  - `.cursor/rules/` configuration for AI assistants (using modern MDC format)
   - Structured `project-plan.md` with task lists
   - AI-friendly project structure and naming
   - Placeholder replacement system (`__PROJECT_NAME__`)

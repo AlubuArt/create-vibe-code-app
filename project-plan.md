@@ -8,7 +8,7 @@ Denne POC indeholder:
 * En basal Next.js-template under `templates/next/`.
 * Et CLI-script (`bin/create-vibe-app.js`), der kopierer templaten, henter en plan fra URL eller bruger standardplan.
 * Automatisk placeholder-erstatning og installation af dependencies.
-* En `cursor.yaml`, der instruerer en Cursor-agent i at eksekvere `project-plan.md` som backlog.
+* En `.cursor/rules/` mappe med MDC format, der instruerer en Cursor-agent i at eksekvere `project-plan.md` som backlog.
 
 > **Når du har gennemført et punkt, skriv "✅" i starten af linjen. Brug AI-assistenten til at generere kode, konfigurationsfiler eller tests efter behov.**
 
@@ -30,7 +30,7 @@ Denne POC indeholder:
 2.1. **Opret minimal Next.js-template** under `templates/next/`: ✅
 ✅ - `package.json` med Next.js, React, Tailwind CSS som afhængigheder
 ✅ - Tom `project-plan.md` med POC‐tasks (kopiér struktur fra repo-topplan)
-✅ - `cursor.yaml` med agent‐instruktion (læs plan → eksekver)
+✅ - `.cursor/rules/` med agent‐instruktion (læs plan → eksekver) i MDC format
 ✅ - `src/` med `pages/index.tsx`, `components/Header.tsx` (skelet)
 2.2. **Placeholder‐erstatning** ✅
 ✅ - Brug `__PROJECT_NAME__` i `package.json`, `project-plan.md`, `README.md`
@@ -44,7 +44,7 @@ Denne POC indeholder:
 3.2. **Kopiér template** ✅
 ✅ - Rekursivt kopier `templates/next/` → `<project-name>/`.
 3.3. **Erstat placeholders** ✅
-✅ - I filerne `package.json`, `project-plan.md`, `cursor.yaml`, `README.md` udskift `__PROJECT_NAME__` → `<project-name>`.
+✅ - I filerne `package.json`, `project-plan.md`, `.cursor/rules/project-guide.mdc`, `README.md` udskift `__PROJECT_NAME__` → `<project-name>`.
 3.4. **Installer dependencies** ✅
 ✅ - Kør `npm install` i den nye mappe.
 
@@ -57,10 +57,11 @@ Denne POC indeholder:
 
 ## 5. Cursor‐konfiguration ✅
 
-5.1. **Skriv `cursor.yaml` i template** ✅
-✅ - Indhold: agent.role, entrypoint: project-plan.md, instruktioner til sekventiel eksekvering.
+5.1. **Skriv `.cursor/rules/` i template** ✅
+✅ - Indhold: agent.role, entrypoint: project-plan.md, instruktioner til sekventiel eksekvering i MDC format.
+✅ - Migreret fra gammel cursor.yaml til ny .cursor/rules/ struktur jf. Cursor dokumentation.
 5.2. **Placeholder‐erstatning også her** ✅
-✅ - Udskift `__PROJECT_NAME__` i `cursor.yaml`.
+✅ - Udskift `__PROJECT_NAME__` i `.cursor/rules/project-guide.mdc`.
 
 ## 6. Testing & validation ✅
 
@@ -74,7 +75,7 @@ Denne POC indeholder:
 ✅ - Kør `npx create-vibe-app my-test-project` → tjek at mappen indeholder:
 ✅ - `project-plan.md` med korrekt navn
 ✅ - `package.json` installeret dependencies
-✅ - `cursor.yaml` med opdateret navn
+✅ - `.cursor/rules/project-guide.mdc` med opdateret navn
 
 ## 7. Dokumentation & Eksempler ✅
 
@@ -120,7 +121,7 @@ Vi har succesfuldt implementeret et komplet CLI-værktøj til AI-optimerede Next
 - Production-ready konfiguration
 
 **🤖 AI-drevet udvikling:**
-- `cursor.yaml` konfiguration for AI assistants
+- `.cursor/rules/` konfiguration for AI assistants (moderne MDC format)
 - Strukturerede `project-plan.md` som backlog
 - AI-venlige instruktioner og workflow
 - Seamless integration med Cursor og andre AI tools

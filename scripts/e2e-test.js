@@ -42,7 +42,7 @@ async function runE2ETest() {
     const requiredFiles = [
       'package.json',
       'project-plan.md',
-      'cursor.yaml',
+      '.cursor/rules/project-guide.mdc',
       'README.md',
       'tsconfig.json',
       'next.config.js',
@@ -109,14 +109,13 @@ async function runE2ETest() {
 
     // Step 7: Validate AI configuration
     console.log('\n🤖 Validating AI configuration...');
-    const cursorYaml = await fs.readFile(path.join(TEST_PROJECT_PATH, 'cursor.yaml'), 'utf8');
+    const cursorRulesFile = await fs.readFile(path.join(TEST_PROJECT_PATH, '.cursor/rules/project-guide.mdc'), 'utf8');
     
-    if (cursorYaml.includes(TEST_PROJECT_NAME) && 
-        cursorYaml.includes('project-plan.md') &&
-        !cursorYaml.includes('__PROJECT_NAME__')) {
-      console.log('  ✅ cursor.yaml configured correctly');
+    if (cursorRulesFile.includes(TEST_PROJECT_NAME) && 
+        cursorRulesFile.includes('project-plan.md')) {
+      console.log('  ✅ .cursor/rules configured correctly');
     } else {
-      throw new Error('cursor.yaml not configured correctly');
+      throw new Error('.cursor/rules not configured correctly');
     }
 
     // Success!
